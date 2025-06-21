@@ -12,7 +12,6 @@ public class DBConnectionManager {
     private final String password = "";
 
     private DBConnectionManager() throws SQLException {
-        // sample snippet without any excception handling
         this.connection = DriverManager.getConnection(jdbcUrl, username, password);
     }
 
