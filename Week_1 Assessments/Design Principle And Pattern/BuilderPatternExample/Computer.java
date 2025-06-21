@@ -67,9 +67,9 @@ public class Computer {
 
     public static void main(String[] args) {
         Computer gamingPC = new Computer.Builder()
-                .setCPU("Intel i9")
-                .setRAM("32GB")
-                .setStorage("1TB SSD")
+                .setCPU("Intel i11")
+                .setRAM("64GB")
+                .setStorage("2TB SSD")
                 .setGraphicsCard("NVIDIA RTX 4080")
                 .setBluetooth(true)
                 .setWiFi(true)
