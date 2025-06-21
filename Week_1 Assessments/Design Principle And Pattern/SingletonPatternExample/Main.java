@@ -14,8 +14,6 @@ public class Main {
             System.out.println("Different logger instances exist.");
         }
 
-        // Practical Exampple JDBC
-        // Normal code sinppet when using a JDBC
         try {
             String url = "";
             String user = "";
@@ -25,22 +23,6 @@ public class Main {
             normalConnection.close();
         } catch (Exception e) {
         }
-
-        // This comes handy when we have multiple DAO but we need to create connection
-        // each time
-        // Why am I writing the same thing again and again? This should be centralized -
-        // the intution
-
-        /*
-         * When to use a singleton
-         * Is this being repeated in multiple places?
-         * Do I need only one instance of this across the app?
-         * Do I want to centralize access and prevent duplication?
-         */
-
-        // when using the Singleton we are creating a seperate class that only do one
-        // job connecting the DB
-        // DBConnectionManager
         try {
             Connection conn = DBConnectionManager.getInstance().getConnection();
             Logger.getInstance().log("Connected using Singleton DBConnectionManager.");
