@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ListOfPlayers from "./ListOfPlayers";
 import IndianPlayers from "./IndianPlayers";
 
-const Task9 = () => {
+const Task1 = () => {
   const [showListOfPlayers, setShowListOfPlayers] = useState(true);
 
   const toggleComponent = () => {
@@ -23,4 +23,4 @@ const Task9 = () => {
   );
 };
 
-export default Task9;
+export default Task1;
